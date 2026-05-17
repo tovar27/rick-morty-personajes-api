@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function TarjetaPersonaje({ character }) {
   const navegar = useNavigate();
+  const [imagenCargada, setImagenCargada] = useState(false);
 
   const claseEstado = {
     Alive: "status-alive",
@@ -15,11 +17,30 @@ function TarjetaPersonaje({ character }) {
       style={{ cursor: "pointer" }}
       onClick={() => navegar(`/character/${character.id}`)}
     >
-      <img
-        src={character.image}
-        alt={character.name}
-        className="card-img-top"
-      />
+      <div style={{ position: "relative", backgroundColor: "var(--bg-secondary)" }}>
+        {!imagenCargada && (
+          <div
+            style={{
+              width: "100%",
+              aspectRatio: "1",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "3rem",
+              backgroundColor: "var(--bg-secondary)"
+            }}
+          >
+            🛸
+          </div>
+        )}
+        <img
+          src={character.image}
+          alt={character.name}
+          className="card-img-top"
+          style={{ display: imagenCargada ? "block" : "none" }}
+          onLoad={() => setImagenCargada(true)}
+        />
+      </div>
       <div className="card-body">
         <h5 className="card-title">{character.name}</h5>
         <p className="card-text mb-1">
