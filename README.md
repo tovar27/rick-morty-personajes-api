@@ -43,6 +43,12 @@ http://localhost:5173
 
 - [Rick and Morty API](https://rickandmortyapi.com) — endpoint: `https://rickandmortyapi.com/api/character`
 
+
+# Demo en vivo
+
+[https://rick-morty-personajes-api.vercel.app](https://rick-morty-personajes-api.vercel.app)
+
+
 # Estructura del proyecto
 src/
 ├── components/
