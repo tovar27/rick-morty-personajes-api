@@ -28,7 +28,7 @@ git clone https://github.com/tovar27/rick-morty-personajes-api.git
 
 
 2. Entra a la carpeta del proyecto:
-cd rick-and-morty-app
+cd rick-morty-personajes-api
 
 3. Instala las dependencias:
 npm install
