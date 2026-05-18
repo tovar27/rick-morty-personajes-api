@@ -6,7 +6,7 @@ function ErrorPage() {
       <h1 className="error-code">404</h1>
       <h2 className="mb-3" style={{ color: "var(--text-soft)" }}>¡Página no encontrada!</h2>
       <p className="mb-4" style={{ color: "var(--accent-purple)" }}>
-        Parece que te perdiste en el multiverso, o algo anda mal eh... 🌀
+        Parece que te perdiste en el multiverso, o algo anda mal eh... 
       </p>
       <Link to="/" className="btn" style={{ backgroundColor: "var(--accent-cyan)", color: "var(--bg-primary)", fontWeight: "bold" }}>
         Volver al inicio

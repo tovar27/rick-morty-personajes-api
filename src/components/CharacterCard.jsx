@@ -30,7 +30,7 @@ function TarjetaPersonaje({ character }) {
               backgroundColor: "var(--bg-secondary)"
             }}
           >
-            🛸
+            
           </div>
         )}
         <img
