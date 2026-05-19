@@ -15,7 +15,6 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-soft);
-  
 }
 
 * {
@@ -98,7 +97,6 @@ body {
   font-weight: 600;
 }
 
-
 .status-dot {
   display: inline-block;
   width: 9px;
@@ -180,6 +178,7 @@ body {
   border-radius: 10px;
   padding: 8px 22px;
   transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
 .btn-paginar:hover:not(:disabled) {
@@ -210,7 +209,7 @@ body {
   text-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
 }
 
-/*setallepersonaje */
+/*setallepersonaje*/
 .table {
   --bs-table-bg: transparent;
   --bs-table-border-color: var(--border-color);
@@ -237,7 +236,7 @@ body {
   color: var(--accent-cyan) !important;
 }
 
-/*inicio */
+/*inicio*/
 .landing-container {
   display: flex;
   flex-direction: column;
@@ -245,7 +244,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   position: relative;
-background-image: url("/fondo.jpg");  background-size: cover;
+  background-image: url("/fondo.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -267,63 +267,11 @@ background-image: url("/fondo.jpg");  background-size: cover;
   gap: 16px;
 }
 
-.portal-wrapper {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.portal-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  animation: spin linear infinite;
-}
-
-.ring-1 {
-  width: 180px;
-  height: 180px;
-  border-top-color: var(--accent-cyan);
-  border-bottom-color: var(--accent-cyan);
-  animation-duration: 3s;
-  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
-}
-
-.ring-2 {
-  width: 135px;
-  height: 135px;
-  border-left-color: var(--accent-purple);
-  border-right-color: var(--accent-purple);
-  animation-duration: 2s;
-  animation-direction: reverse;
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
-}
-
-.ring-3 {
-  width: 90px;
-  height: 90px;
-  border-top-color: var(--accent-cyan);
-  border-right-color: var(--accent-purple);
-  animation-duration: 1.5s;
-}
-
-.portal-core {
-  font-size: 2.5rem;
-  z-index: 1;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
+.landing-icono {
+  font-size: 8rem;
+  color: #a78bfa;
+  filter: drop-shadow(0 0 20px rgba(167, 139, 250, 0.6));
+  margin-bottom: 8px;
 }
 
 .landing-title {

@@ -1,19 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import { GiAlienStare } from "react-icons/gi";
 
-function LandingPage() {
-  const navigate = useNavigate();
+function PaginaBienvenida() {
+  const navegar = useNavigate();
 
   return (
     <div className="landing-container">
       <div className="landing-overlay"></div>
 
       <div className="landing-content">
-        <div className="portal-wrapper">
-          <div className="portal-ring ring-1"></div>
-          <div className="portal-ring ring-2"></div>
-          <div className="portal-ring ring-3"></div>
-          <div className="portal-core">👽</div>
-        </div>
+        <GiAlienStare className="landing-icono" />
 
         <h1 className="landing-title">Rick & Morty</h1>
         <p className="landing-subtitle">
@@ -21,11 +17,11 @@ function LandingPage() {
         </p>
 
         <div className="d-flex gap-3 mt-2">
-          <button className="btn-enter" onClick={() => navigate("/home")}>
+          <button className="btn-enter" onClick={() => navegar("/home")}>
             Explorar personajes
           </button>
-          <button className="btn-enter-secondary" onClick={() => navigate("/filter")}>
-            Mostrar por especie
+          <button className="btn-enter-secondary" onClick={() => navegar("/filter")}>
+            Filtrar por especie
           </button>
         </div>
       </div>
@@ -33,4 +29,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default PaginaBienvenida;
